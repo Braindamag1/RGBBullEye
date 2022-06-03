@@ -9,17 +9,19 @@ import SwiftUI
 
 struct ContentView: View {
     @State var game = Game()
-    @State var gusess: RGB
-    var target = RGB.random()
+    @State var guess: RGB
     var body: some View {
         VStack {
-            Color(red: 0.5, green: 0.5, blue: 0.5)
+            Color(game.target)
             Text("R: ??? G: ??? B: ???")
                 .padding()
-            Color(red: 0.5, green: 0.5, blue: 0.5)
-            Text("R: 204 G: 76 B: 178")
+            Color(guess)
+            Text(guess.intString())
                 .padding()
-            Slider(value: .constant(0.5))
+            ColorSlider(value: $guess.red, trackColor: .red)
+            ColorSlider(value: $guess.green, trackColor: .green)
+            ColorSlider(value: $guess.blue, trackColor: .blue)
+
             Button(action: {}) {
                 Text("Hit Me !")
             }
@@ -29,6 +31,20 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView(gusess: .init())
+        ContentView(guess: .init())
+    }
+}
+
+struct ColorSlider: View {
+    @Binding var value: Double
+    var trackColor: Color
+    var body: some View {
+        HStack {
+            Text("0")
+            Slider(value: $value)
+                .accentColor(trackColor)
+            Text("255")
+        }
+        .padding(.horizontal)
     }
 }

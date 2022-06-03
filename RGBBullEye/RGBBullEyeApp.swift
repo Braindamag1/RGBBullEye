@@ -11,7 +11,7 @@ import SwiftUI
 struct RGBBullEyeApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView(guess: RGB.init())
         }
     }
 }
