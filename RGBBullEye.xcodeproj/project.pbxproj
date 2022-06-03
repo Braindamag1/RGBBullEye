@@ -14,6 +14,9 @@
 		419E40DE284A2D8000E992A6 /* RGBBullEyeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 419E40DD284A2D8000E992A6 /* RGBBullEyeTests.swift */; };
 		419E40E8284A2D8000E992A6 /* RGBBullEyeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 419E40E7284A2D8000E992A6 /* RGBBullEyeUITests.swift */; };
 		419E40EA284A2D8000E992A6 /* RGBBullEyeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 419E40E9284A2D8000E992A6 /* RGBBullEyeUITestsLaunchTests.swift */; };
+		419E40F7284A314F00E992A6 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 419E40F6284A314F00E992A6 /* Game.swift */; };
+		419E40F9284A315500E992A6 /* RGB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 419E40F8284A315500E992A6 /* RGB.swift */; };
+		419E40FB284A315D00E992A6 /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 419E40FA284A315D00E992A6 /* ColorExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +47,9 @@
 		419E40E3284A2D8000E992A6 /* RGBBullEyeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RGBBullEyeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		419E40E7284A2D8000E992A6 /* RGBBullEyeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RGBBullEyeUITests.swift; sourceTree = "<group>"; };
 		419E40E9284A2D8000E992A6 /* RGBBullEyeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RGBBullEyeUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		419E40F6284A314F00E992A6 /* Game.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		419E40F8284A315500E992A6 /* RGB.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RGB.swift; sourceTree = "<group>"; };
+		419E40FA284A315D00E992A6 /* ColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +100,7 @@
 		419E40CB284A2D7D00E992A6 /* RGBBullEye */ = {
 			isa = PBXGroup;
 			children = (
+				419E40FC284A35E900E992A6 /* Model */,
 				419E40CC284A2D7D00E992A6 /* RGBBullEyeApp.swift */,
 				419E40CE284A2D7D00E992A6 /* ContentView.swift */,
 				419E40D0284A2D8000E992A6 /* Assets.xcassets */,
@@ -125,6 +132,16 @@
 				419E40E9284A2D8000E992A6 /* RGBBullEyeUITestsLaunchTests.swift */,
 			);
 			path = RGBBullEyeUITests;
+			sourceTree = "<group>";
+		};
+		419E40FC284A35E900E992A6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				419E40F6284A314F00E992A6 /* Game.swift */,
+				419E40F8284A315500E992A6 /* RGB.swift */,
+				419E40FA284A315D00E992A6 /* ColorExtension.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,7 +275,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				419E40CF284A2D7D00E992A6 /* ContentView.swift in Sources */,
+				419E40F7284A314F00E992A6 /* Game.swift in Sources */,
 				419E40CD284A2D7D00E992A6 /* RGBBullEyeApp.swift in Sources */,
+				419E40F9284A315500E992A6 /* RGB.swift in Sources */,
+				419E40FB284A315D00E992A6 /* ColorExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
