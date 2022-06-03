@@ -1,0 +1,22 @@
+//
+//  ColorSlider.swift
+//  RGBBullEye
+//
+//  Created by YJ.Lee on 2022/6/3.
+//
+
+import Foundation
+import SwiftUI
+struct ColorSlider: View {
+    @Binding var value: Double
+    var trackColor: Color
+    var body: some View {
+        HStack {
+            Text("0")
+            Slider(value: $value)
+                .accentColor(trackColor)
+            Text("255")
+        }
+        .padding(.horizontal)
+    }
+}

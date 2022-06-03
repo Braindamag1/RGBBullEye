@@ -17,6 +17,7 @@
 		419E40F7284A314F00E992A6 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 419E40F6284A314F00E992A6 /* Game.swift */; };
 		419E40F9284A315500E992A6 /* RGB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 419E40F8284A315500E992A6 /* RGB.swift */; };
 		419E40FB284A315D00E992A6 /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 419E40FA284A315D00E992A6 /* ColorExtension.swift */; };
+		419E40FE284A3CA500E992A6 /* ColorSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 419E40FD284A3CA500E992A6 /* ColorSlider.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,7 @@
 		419E40F6284A314F00E992A6 /* Game.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 		419E40F8284A315500E992A6 /* RGB.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RGB.swift; sourceTree = "<group>"; };
 		419E40FA284A315D00E992A6 /* ColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
+		419E40FD284A3CA500E992A6 /* ColorSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorSlider.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,9 +102,9 @@
 		419E40CB284A2D7D00E992A6 /* RGBBullEye */ = {
 			isa = PBXGroup;
 			children = (
-				419E40FC284A35E900E992A6 /* Model */,
 				419E40CC284A2D7D00E992A6 /* RGBBullEyeApp.swift */,
-				419E40CE284A2D7D00E992A6 /* ContentView.swift */,
+				419E40FC284A35E900E992A6 /* Model */,
+				419E40FF284A3CCF00E992A6 /* View */,
 				419E40D0284A2D8000E992A6 /* Assets.xcassets */,
 				419E40D2284A2D8000E992A6 /* Preview Content */,
 			);
@@ -142,6 +144,15 @@
 				419E40FA284A315D00E992A6 /* ColorExtension.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		419E40FF284A3CCF00E992A6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				419E40CE284A2D7D00E992A6 /* ContentView.swift */,
+				419E40FD284A3CA500E992A6 /* ColorSlider.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -278,6 +289,7 @@
 				419E40F7284A314F00E992A6 /* Game.swift in Sources */,
 				419E40CD284A2D7D00E992A6 /* RGBBullEyeApp.swift in Sources */,
 				419E40F9284A315500E992A6 /* RGB.swift in Sources */,
+				419E40FE284A3CA500E992A6 /* ColorSlider.swift in Sources */,
 				419E40FB284A315D00E992A6 /* ColorExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
